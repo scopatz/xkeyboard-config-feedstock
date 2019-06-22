@@ -1,5 +1,5 @@
 {% set name = "xkeyboard-config" %}
-{% set version = "2.24" %}
+{% set version = "2.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://www.x.org/releases/individual/data/{{ name }}/{{ name }}-{{ version }}.tar.bz2
-  sha256: 91b18580f46b4e4ea913707f6c8d68ab5286879c3a6591462f3b9e760d3ac4d7
+  sha256: 690daec8fea63526c07620c90e6f3f10aae34e94b6db6e30906173480721901f
 
 build:
   number: 0
