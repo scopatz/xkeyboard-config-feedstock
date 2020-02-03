@@ -8,6 +8,9 @@ package:
 source:
   url: http://www.x.org/releases/individual/data/{{ name }}/{{ name }}-{{ version }}.tar.bz2
   sha256: 1d4175278bf06000683656763a8b1d3282c61a314b6db41260c8efe92d621802
+  patches:
+    # use conda's Python
+    - map-variants.py.patch
 
 build:
   number: 0
@@ -23,6 +26,7 @@ requirements:
     - intltool
     - perl-xml-parser
     - libxslt
+    - python >=3
   host:
     - xorg-xproto
     - xorg-libx11
